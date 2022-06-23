@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Color game</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1 class="title">
+        El gran <span id="colorDisplay"></span> juego de adivinanza
+      </h1>
+      <div class="stripe">
+        <button id="reset">Cambiar los colores</button>
+        <span id="message"></span>
+        <sapn class="difficulty">
+          <button id="hard" class=" selected">Dificil</button>
+          <button id="easy" class="">Facil</button>
+        </sapn>
+        <span>
+          <a href="index.html"
+            ><img src="icono-idioma-espanol.webp" class="idioma" alt="español"
+          /></a>
+          <a href="english.html"
+            ><img src="UK.ico" class="idioma" alt="english"
+          /></a>
+        </span>
+      </div>
+    </header>
+    <div class="container">
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

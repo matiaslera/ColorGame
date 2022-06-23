@@ -1,0 +1,86 @@
+.square {
+  float: left;
+  max-width:400px;
+  max-height: 400px;
+  padding-bottom: 30%;
+  margin: 1% 2%;
+  transition: all 1.2s ease 0.3s;
+  border-radius: 15%;
+}
+
+.square:hover{
+    border: 3px solid white;
+}
+.container{
+    margin: 4% auto;
+    display: grid;
+    max-width: 600px;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,minmax(200px,1fr));
+    column-gap: 10px;
+    row-gap: 10px;
+}
+body{
+    background-color: #232323;
+}
+
+h1{
+    color: white;
+    text-align: center;
+}
+
+#message{
+    text-align: right;
+    font-weight: 600;
+}
+.stripe{
+    background-color: white;
+    height: 30px;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    opacity: 0.9;
+}
+#play{
+    text-align: left;
+}
+.difficulty .selected{
+    background-color: #eeae00d2;
+    font-weight: 600;
+    box-shadow: 0 4px 4px rgba(0,0, 0, 0.1);
+    border-color: #757171d0;
+    border-width: 3px;
+}
+
+.invisible{
+    visibility: hidden;
+}
+
+.idioma{
+    width: 25px;
+}
+
+.difficulty {
+    /* height: 92%; */
+    align-items: center;
+}
+.difficulty button{
+    background-color: #0FF900;
+}
+
+button{
+    height: 22px;
+    background-color: rgb(255, 255, 255);
+    padding: 0 16px;
+    border-radius: 4px;
+    overflow: visible;
+    opacity: 1;
+    border-width: 1px;
+}
+
+button:hover{
+    box-shadow: 0 3px 1px -2px #0003, 0 2px 2px #00000024, 0 1px 5px #0000001f;
+    transform: translate3d(0, 0, 0);
+    transition: background 400ms cubic-bezier(0.25, 0.8, 0.25, 1),box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1);
+}
